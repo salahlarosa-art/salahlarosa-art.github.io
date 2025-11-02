@@ -1,0 +1,226 @@
+/* --- Global Styles --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+/* --- Header --- */
+header {
+    background-color: #4A90E2; /* A nice, trustworthy blue */
+    color: #ffffff;
+    padding: 30px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header p {
+    font-size: 1.1em;
+    opacity: 0.9;
+    margin-top: 10px;
+}
+
+/* --- Main Calculator Area --- */
+main {
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.calculator-body {
+    flex: 2; /* Takes up 2/3 of the space */
+    min-width: 300px;
+}
+
+.input-area {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 0.9em;
+    color: #555;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield; /* Hides spinner buttons on Firefox */
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none; /* Hides spinner buttons on Chrome/Safari */
+    margin: 0;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#add-btn {
+    background-color: #4A90E2;
+    color: white;
+}
+
+#add-btn:hover {
+    background-color: #357ABD;
+}
+
+/* --- Subscription List --- */
+#service-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+}
+
+.service-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.service-item:first-child {
+    border-top: 1px solid #eee;
+}
+
+.service-item span {
+    font-size: 1.1em;
+}
+
+.delete-btn {
+    background-color: #e74c3c; /* Red */
+    color: white;
+    font-size: 0.8em;
+    padding: 5px 10px;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+/* --- Totals Card --- */
+.totals-card {
+    flex: 1; /* Takes up 1/3 of the space */
+    min-width: 250px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+.totals-card h2 {
+    text-align: center;
+    margin-top: 0;
+    border-bottom: 2px solid #4A90E2;
+    padding-bottom: 10px;
+}
+
+.total-line {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.total-value {
+    font-weight: bold;
+}
+
+.total-line.significant .total-value {
+    font-size: 1.3em;
+    color: #c0392b; /* A significant red color */
+}
+
+#reset-btn {
+    width: 100%;
+    background-color: #aaa;
+    color: white;
+    margin-top: 10px;
+}
+
+#reset-btn:hover {
+    background-color: #888;
+}
+
+/* --- Monetization Area --- */
+.monetization-area {
+    background-color: #fdfdfd;
+    padding: 30px;
+    border-top: 1px solid #eee;
+}
+
+.monetization-area h3,
+.monetization-area p {
+    text-align: center;
+}
+
+.affiliate-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.aff-link {
+    display: block;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #333;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.aff-link:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+}
+
+.aff-link strong {
+    color: #4A90E2;
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+}
