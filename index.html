@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Subscription Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>The True Cost of Your Subscriptions</h1>
+            <p>Are your small monthly charges costing you a fortune? Let's find out.</p>
+        </header>
+
+        <main>
+            <div class="calculator-body">
+                <div class="input-area">
+                    <label for="service-name">Service Name (e.g., "Netflix")</label>
+                    <input type="text" id="service-name" placeholder="Netflix">
+                    
+                    <label for="service-cost">Monthly Cost ($)</label>
+                    <input type="number" id="service-cost" placeholder="15.99">
+                    
+                    <button id="add-btn">Add Subscription</button>
+                </div>
+                
+                <ul id="service-list">
+                    </ul>
+            </div>
+            
+            <div class="totals-card">
+                <h2>Your Totals</h2>
+                <div class="total-line">
+                    <span>Monthly Total:</span>
+                    <span id="monthly-total" class="total-value">$0.00</span>
+                </div>
+                <div class="total-line">
+                    <span>Annual (1-Year) Total:</span>
+                    <span id="annual-total" class="total-value">$0.00</span>
+                </div>
+                <div class="total-line significant">
+                    <span>5-Year Total:</span>
+                    <span id="five-year-total" class="total-value">$0.00</span>
+                </div>
+                <button id="reset-btn">Reset All</button>
+            </div>
+        </main>
+
+        <section class="monetization-area">
+            <h3>Tired of Subscription Creep?</h3>
+            <p>Take control of your finances. These are the tools I recommend.</p>
+            
+            <div class="affiliate-links">
+                <a href="#" class="aff-link">
+                    <strong>Manage Your Budget:</strong> Try [Budgeting App Name]. It helps you track every dollar.
+                </a>
+                <a href="#" class="aff-link">
+                    <strong>Cut the Cable Bill:</strong> Get this [Digital TV Antenna] and get local channels for free.
+                </a>
+                <a href="#" class="aff-link">
+                    <strong>Stop Overpaying:</strong> [Service Name] can help you lower your bills by negotiating for you.
+                </a>
+            </div>
+            </section>
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
